@@ -53,7 +53,7 @@ function moveObstacle() {
 setInterval(moveObstacle, 20);
 
 function checkColission() {
-    if (obstacleX<110 || obstacleX>60 && isJumping == false) {
+    if (obstacleX<110 && obstacleX>60 && isJumping == false) {
         gameOver()
     }
 }
