@@ -15,6 +15,8 @@ function jump() {
     }, 500)
 }
 
+document.addEventListener('click', jump)
+
 document.addEventListener('keydown', (elem) => {
     if (elem.code == 'Space' || elem.code == 'ArrowUp') {
         jump()
@@ -71,7 +73,8 @@ function gameOver() {
     <button onclick="restart()">🔄 Restart</button>`
     document.querySelector('#game').appendChild(msg)
 
-    if(score > maxScore){
+    if(score > maxScore){z
+        maxScore = score
         maxScoreEl.innerHTML = score
     }
 }
